@@ -1,0 +1,52 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $dark-blue-intro;
+  color: $white;
+  font-family: $font-Raleway;
+  font-weight: $font-400;
+  font-size: $font-size;
+  position: relative;
+  .top {
+    padding: 0 2rem;
+    z-index: 1;
+    img {
+      width: 100%;
+    }
+  }
+  .bg {
+    padding: 0 2rem;
+    position: absolute;
+    top: 40%;
+    height: 141px;
+    width: 100%;
+    background-image: url("/images/bg-curvy-mobile.svg");
+    background-repeat: no-repeat;
+  }
+  h1 {
+    z-index: 1;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 1rem;
+  }
+  .test {
+    padding: 1rem 0;
+    background-color: $dark-blue-main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    P {
+      text-align: center;
+    }
+    button {
+      border: none;
+      background: linear-gradient(90deg, $cyan 15%, $blue 100%);
+      color: $white;
+      padding: 1rem 0;
+      border-radius: 2rem;
+      width: 75%;
+      margin-top: 2rem;
+    }
+  }
+}

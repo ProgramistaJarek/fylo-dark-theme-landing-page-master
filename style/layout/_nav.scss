@@ -1,0 +1,20 @@
+nav {
+  background-color: $dark-blue-intro;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  img {
+    width: 100px;
+  }
+  .menu {
+    display: flex;
+    font-family: $font-Raleway;
+    font-weight: $font-400;
+    font-size: $font-size;
+    p {
+      margin-left: 1.5rem;
+    }
+  }
+}
