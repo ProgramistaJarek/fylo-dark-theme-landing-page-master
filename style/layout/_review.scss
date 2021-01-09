@@ -1,0 +1,50 @@
+.review {
+  font-family: $font-OpenSans;
+  font-weight: $font-400;
+  margin: 0 1rem;
+  .card-review {
+    background-color: $dark-blue-testimonials;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    p {
+      line-height: 1.3rem;
+      font-size: 0.8rem;
+    }
+    &:nth-child(1) {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        background-image: url("/images/bg-quotes.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 35px;
+        height: 25px;
+        top: -1.5rem;
+        left: 0.5rem;
+      }
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+      img {
+        width: 36px;
+        border-radius: 50%;
+      }
+      .name {
+        margin-left: 0.5rem;
+        h3 {
+          font-size: $font-size;
+        }
+        h4 {
+          font-weight: $font-400;
+          font-size: 0.6rem;
+          margin-top: 0.2rem;
+        }
+      }
+    }
+  }
+}

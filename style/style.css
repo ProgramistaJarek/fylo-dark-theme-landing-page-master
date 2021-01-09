@@ -148,4 +148,91 @@ header .test button {
   height: 16px;
 }
 
+.review {
+  font-family: "OpenSans", sans-serif;
+  font-weight: 400;
+  margin: 0 1rem;
+}
+.review .card-review {
+  background-color: #202a3c;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+}
+.review .card-review p {
+  line-height: 1.3rem;
+  font-size: 0.8rem;
+}
+.review .card-review:nth-child(1) {
+  position: relative;
+}
+.review .card-review:nth-child(1)::before {
+  position: absolute;
+  content: "";
+  background-image: url("/images/bg-quotes.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 35px;
+  height: 25px;
+  top: -1.5rem;
+  left: 0.5rem;
+}
+.review .card-review .profile {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.review .card-review .profile img {
+  width: 36px;
+  border-radius: 50%;
+}
+.review .card-review .profile .name {
+  margin-left: 0.5rem;
+}
+.review .card-review .profile .name h3 {
+  font-size: 14px;
+}
+.review .card-review .profile .name h4 {
+  font-weight: 400;
+  font-size: 0.6rem;
+  margin-top: 0.2rem;
+}
+
+.access {
+  background-color: #1c2431;
+  font-family: "OpenSans", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-radius: 0.5rem;
+  margin-top: 5rem;
+}
+.access h2 {
+  font-size: 1.2rem;
+}
+.access p {
+  margin-top: 1rem;
+  line-height: 1.3rem;
+}
+.access form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.access form input[type=text] {
+  padding: 1rem;
+  border-radius: 2rem;
+  border: none;
+}
+.access form button {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: none;
+  background: linear-gradient(90deg, #65e2d9 15%, #339ecc 100%);
+  color: white;
+  font-weight: 700;
+}
+
 /*# sourceMappingURL=style.css.map */
