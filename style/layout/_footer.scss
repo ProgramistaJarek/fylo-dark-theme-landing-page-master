@@ -5,10 +5,18 @@ footer {
   padding-top: 15rem;
   font-family: $font-OpenSans;
   font-size: $font-size;
+  .links{
+    margin-top: 1.5rem;
+  }
   .contact {
     display: flex;
-    flex-direction: column;
-    .contact-con {
+    align-items: flex-start;
+    p {
+      margin-left: 1.5rem;
+    }
+  }
+  .tel-email {
+    .con {
       display: flex;
       align-items: flex-start;
       margin-top: 1.5rem;
@@ -17,35 +25,74 @@ footer {
       }
     }
   }
-  .about {
-    a {
-      text-decoration: none;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      margin-top: 1rem;
-      &:first-child {
-        margin-top: 3rem;
-      }
+}
+.about {
+  a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    &:first-child {
+      margin-top: 3rem;
     }
   }
-  .social {
-    margin-top: 3rem;
+}
+.social {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  a {
+    text-decoration: none;
+    border: 1px solid $white;
+    border-radius: 50%;
+    margin: 2rem 0.5rem;
+    padding: 0.3rem;
+    width: 32px;
+    height: 32px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    a {
-      text-decoration: none;
-      border: 1px solid $white;
-      border-radius: 50%;
-      margin: 2rem 0.5rem;
-      padding: 0.3rem;
-      width: 32px;
-      height: 32px;
+    color: $white;
+  }
+}
+
+body {
+  background-color: $dark-blue-footer;
+}
+
+@media (min-width: 1024px) {
+  footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    .links {
+      margin-top: 1rem;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: $white;
+      justify-content: space-between;
+    }
+    .contact{
+      width: 33%;
+    }
+    .tel-email {
+      .con {
+        &:nth-child(1) {
+          margin-top: 0rem;
+        }
+      }
+    }
+    .about {
+      a {
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+    .social {
+      margin-top: 0;
+      a {
+        margin: 0 0.5rem;
+      }
     }
   }
 }

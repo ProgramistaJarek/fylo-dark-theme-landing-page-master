@@ -7,7 +7,7 @@
   border-radius: 0.5rem;
   //margin-top: 5rem;
   position: relative;
-  bottom: -10rem;
+  bottom: -9rem;
   h2 {
     font-size: 1.2rem;
   }
@@ -33,5 +33,12 @@
         color: $white;
         font-weight: $font-700;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .access {
+    max-width: 768px;
+    margin: auto;
   }
 }

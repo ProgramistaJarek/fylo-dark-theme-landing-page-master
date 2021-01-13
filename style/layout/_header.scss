@@ -55,3 +55,15 @@ header {
     }
   }
 }
+@media (min-width: 376px) {
+  header {
+    background-image: url("/images/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    .bottom {
+      .bg {
+        background: none;
+      }
+    }
+  }
+}
