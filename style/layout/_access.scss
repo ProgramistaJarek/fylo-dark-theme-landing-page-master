@@ -5,7 +5,6 @@
   text-align: center;
   padding: 2rem 1.5rem;
   border-radius: 0.5rem;
-  //margin-top: 5rem;
   position: relative;
   bottom: -9rem;
   h2 {
@@ -32,6 +31,10 @@
         background: linear-gradient(90deg, $cyan 15%, $blue 100%);
         color: $white;
         font-weight: $font-700;
+        &:hover {
+          background: $cyan;
+          cursor: pointer;
+        }
     }
   }
 }
@@ -40,5 +43,16 @@
   .access {
     max-width: 768px;
     margin: auto;
+    form{
+      flex-direction: row;
+      justify-content: space-between;
+      input[type="text"] {
+        width: 63%;
+      }
+      button{
+        margin: 0;
+        width: 32%;
+      }
+    }
   }
 }

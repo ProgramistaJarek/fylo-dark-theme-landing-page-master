@@ -51,6 +51,10 @@ header {
         border-radius: 2rem;
         width: 75%;
         margin-top: 2rem;
+        &:hover {
+          background: $cyan;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -60,9 +64,22 @@ header {
     background-image: url("/images/bg-curvy-desktop.svg");
     background-repeat: no-repeat;
     background-position: bottom;
+    background-size: cover;
     .bottom {
       .bg {
         background: none;
+      }
+      .bottom-con {
+        max-width: 700px;
+        h1 {
+          font-size: 30px;
+        }
+        P {
+          font-size: 18px;
+        }
+        button {
+          width: 50%;
+        }
       }
     }
   }

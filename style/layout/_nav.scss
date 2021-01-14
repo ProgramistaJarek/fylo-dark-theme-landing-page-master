@@ -1,6 +1,5 @@
 nav {
   background-color: $dark-blue-intro;
-  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,8 +12,14 @@ nav {
     font-family: $font-Raleway;
     font-weight: $font-400;
     font-size: $font-size;
-    p {
+    a {
       margin-left: 1.5rem;
+      text-decoration: none;
+      color: white;
+      opacity: 0.7;
+      &:hover{
+        opacity: 1;
+      }
     }
   }
 }
